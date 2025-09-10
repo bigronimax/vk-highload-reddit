@@ -12,7 +12,8 @@
   **Reddit** — это веб-сервис, сочетающий в себе черты форума и социальной сети и основанный на сообществах по интересам.
 
 ## Целевая аудитория
-  - DAU - 91,2M. [^2]
+  - DAU - 110M. [^2]
+  - WAU - 416M. [^2]
   - MAU - 4,66B. [^1]
   - ## Процент трафика по странам
   ![Countries stats](/assets/countries-stat.png) [^1]
@@ -22,8 +23,9 @@
   - 2,72 миллиарда комментариев за 2024 год. [^3]
   - В среднем 40 миллионов поисковых запросов в день за декабрь 2024. [^3]
   - 45975 новых сабреддитов каждый месяц. [^4]
+  - 1533 новых сабреддитов каждый день. [^4]
   - Средняя продолжительность сессии - 13.32 минут. [^1]
-
+  - Около 3-4 страниц за визит. [^1]
   
 
 ## MVP
@@ -38,6 +40,6 @@
 ## Список использованных источников
 
 [^1]: [reddit.com Web Traffic Statistics](https://www.semrush.com/website/reddit.com/overview/)
-[^2]: [Reddit Statistics of 2025: Users & Revenue Data](https://www.demandsage.com/reddit-statistics/)
+[^2]: [Reddit by the numbers](https://redditinc.com/press)
 [^3]: [Reddit User and Growth Stats](https://backlinko.com/reddit-users)
 [^4]: [How Many Subreddits Are There? (Subreddit Statistics)](https://www.businessdasher.com/how-many-subreddits-are-there/)
