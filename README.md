@@ -13,18 +13,16 @@
 
 ## Целевая аудитория
   - DAU - 91,2M. [^2]
-  - MAU - 1,21B. [^2]
+  - MAU - 4,66B. [^1]
   - ## Процент трафика по странам
   ![Countries stats](/assets/countries-stat.png) [^1]
-  - США - 26,4M. [^2]
   
 ## Продуктовые метрики
   - 550 миллионов постов за 2024 год. [^3]
-  ## Количество постов по годам
-  ![Countries stats](/assets/posts-stat.png) [^3]
   - 2,72 миллиарда комментариев за 2024 год. [^3]
   - 40 миллионов поисковых запросов в день за декабрь 2024. [^3]
-  - Более 100 000 активных сабреддитов. [^3]
+  - 45975 новых сабреддитов каждый месяц. [^4]
+  - Средняя продолжительность сессии - 13.32 минут. [^1]
 
   
 
@@ -34,8 +32,7 @@
   3. Создание комментариев к постам
   4. Система оценивания постов/комментариев
   5. Создание тематических сообществ (сабреддиты)
-  6. Персонализированная лента по предпочтениям
-  7. Поиск постов/сообществ
+  6. Поиск постов/сообществ
 
 <a name="sources"></a>
 ## Список использованных источников
@@ -43,3 +40,4 @@
 [^1]: [reddit.com Web Traffic Statistics](https://www.semrush.com/website/reddit.com/overview/)
 [^2]: [Reddit Statistics of 2025: Users & Revenue Data](https://www.demandsage.com/reddit-statistics/)
 [^3]: [Reddit User and Growth Stats](https://backlinko.com/reddit-users)
+[^4]: [How Many Subreddits Are There? (Subreddit Statistics)](https://www.businessdasher.com/how-many-subreddits-are-there/)
