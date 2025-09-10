@@ -14,7 +14,7 @@
 ## Целевая аудитория
   - DAU - 110M. [^2]
   - WAU - 416M. [^2]
-  - MAU - 4,66B. [^1]
+  - MAU - 1,21B. [^5]
   - ## Процент трафика по странам
   ![Countries stats](/assets/countries-stat.png) [^1]
   
@@ -43,3 +43,4 @@
 [^2]: [Reddit by the numbers](https://redditinc.com/press)
 [^3]: [Reddit User and Growth Stats](https://backlinko.com/reddit-users)
 [^4]: [How Many Subreddits Are There? (Subreddit Statistics)](https://www.businessdasher.com/how-many-subreddits-are-there/)
+[^5]: [Reddit Statistics 2025 (Top Picks)](https://www.demandsage.com/reddit-statistics/)
