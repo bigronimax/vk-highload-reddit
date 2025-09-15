@@ -214,4 +214,4 @@
 [^6]: [New subreddits by month](https://frontpagemetrics.com/month/)
 [^7]: [Reddit Statistics 2025: Traffic, Users, and More](https://sqmagazine.co.uk/reddit-statistics/)
 [^8]: [Reddit could use this strategy to ‘monetize aggressively’ following its IPO](https://www.marketwatch.com/story/reddit-could-use-this-strategy-to-monetize-aggressively-following-its-ipo-2e1c91da)
-[^9] [How Many Users Does Reddit Have? (2025)](https://electroiq.com/stats/how-many-users-does-reddit-have/)
+[^9]: [How Many Users Does Reddit Have? (2025)](https://electroiq.com/stats/how-many-users-does-reddit-have/)
