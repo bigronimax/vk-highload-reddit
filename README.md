@@ -224,6 +224,7 @@
 - m.reddit.com — мобильная версия сайта
 - mod.reddit.com — версия сайта для модератора
 - api.reddit.com — API для разработки
+- static.reddit.com - раздача статики
 
 <a name="sources"></a>
 ## Список использованных источников
