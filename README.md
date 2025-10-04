@@ -340,15 +340,18 @@ BGP Anycast балансировка - для определения ближа�
 ## Размеры данных
 | Таблица | Расчет размера строки (поля) | Размер строки | Всего строк | Размер таблицы |
 |---------|------------------------------|---------------|-------------|----------------|
-| Users | 16 (id) + 16 (avatar_id) + 16 (banner_id) + 90 (nickname) + 200 (description) + 32 (email) + 64 (password) + 4 (token_version) + 4 (created_at) + 4 (updated_at) | 446 байт | 515 мил. | 214 ГБ |
-| Image | 16 (id) + 16 (uuid) + 4 (created_at) + 4 (updated_at) | 40 байт | +-500 мил. | 18.6 ГБ |
+| Users | 16 (id) + 16 (avatar_id) + 16 (banner_id) + 90 (nickname) + 200 (description) + 32 (email) + 64 (password) + 4 (token_version) + 4 (created_at) + 4 (updated_at) | 446 байт | 515 млн. | 214 ГБ |
+| Image | 16 (id) + 16 (uuid) + 4 (created_at) + 4 (updated_at) | 40 байт | +-500 млн. | 18.6 ГБ |
 | Comment | 16 (id) + 16 (creator_id) + 16 (post_id) + 16 (parent_comment_id) + 100 (content) + 4 (created_at) + 4 (updated_at) | 172 байт | 16 млрд. | 2.5 ТБ |
 | Post | 16 (id) + 16 (creator_id) + 16 (subbreddit_id) + 300 (title) + 5 (post_type) + 4 (created_at) + 4 (updated_at) | 361 байт | 1 млрд. | 336.2 ГБ |
 | PostText | 16 (id) + 16 (post_id) + 200 (content) + 4 (created_at) + 4 (updated_at) | 240 байт | 290 млн. | 65 ГБ |
-
-| PostVideo | 16 (id) + 16 (post_id) + 200 (content) + 4 (created_at) + 4 (updated_at) | 240 байт | 210 млн. | 336.2 ГБ |
-| PostImages | 16 (id) + 16 (post_id) + 200 (content) + 4 (created_at) + 4 (updated_at) | 240 байт | 380 млн. | 336.2 ГБ |
-| PostLink | 16 (id) + 16 (post_id) + 200 (content) + 4 (created_at) + 4 (updated_at) | 240 байт | 120 млн. | 336.2 ГБ |
+| PostVideo | 16 (id) + 16 (post_id) + 75 (video_url) + 4 (created_at) + 4 (updated_at) | 115 байт | 210 млн. | 22.5 ГБ |
+| PostImages | 16 (id) + 16 (post_id) + 16 (image_id) + 4 (created_at) + 4 (updated_at) | 56 байт | 380 млн. | 20 ГБ |
+| PostLink | 16 (id) + 16 (post_id) + 75 (link) + 4 (created_at) + 4 (updated_at) | 115 байт | 120 млн. | 12.9 ГБ |
+| PostVote | 16 (id) + 16 (user_id) + 16 (post_id) + 1 (is_voteup) + 4 (created_at) + 4 (updated_at) | 57 байт | 9.4 млн. | 0.5 ГБ |
+| CommentVote | 16 (id) + 16 (user_id) + 16 (post_id) + 1 (is_voteup) + 4 (created_at) + 4 (updated_at) | 57 байт | 9.4 млн. | 0.5 ГБ |
+| Subreddit | 16 (id) + 16 (creator_id) + 16 (avatar_id) + 16 (banner_id) + 21 (name) + 500 (description) + 4 (created_at) + 4 (updated_at) | 593 байт | 5.155 млн. | 2.9 ГБ |
+| Subscription | 16 (id) + 16 (user_id) + 16 (subreddit_id) + 4 (created_at) + 4 (updated_at) | 56 байт | ... | ... |
 
 ## Требования к консистентности
 - При удалении пользователя, сабреддита, поста, комментария каскадно удаляются связанные данные (подписки, голоса, посты, комментарии)
