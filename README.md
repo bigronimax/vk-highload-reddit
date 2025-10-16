@@ -347,19 +347,19 @@ BGP Anycast балансировка - для определения ближа�
 ## Размеры данных
 | Таблица | Расчет размера строки (поля) | Размер строки | Всего строк | Размер таблицы |
 |---------|------------------------------|---------------|-------------|----------------|
-| Session | 16 (id) + 16 (user_id) + 40 (token) + 4 (expired_at) | 76 байт | 515 млн. | 37 ГБ |
-| Users | 16 (id) + 16 (avatar_id) + 16 (banner_id) + 90 (nickname) + 200 (description) + 32 (email) + 64 (password) + 1 (is_deleted) + 4 (created_at) + 4 (updated_at) | 443 байт | 515 млн. | 213 ГБ |
-| Image | 16 (id) + 16 (uuid) + 1 (is_deleted) + 4 (created_at) + 4 (updated_at) | 41 байт | +-500 млн. | 19 ГБ |
-| Comment | 16 (id) + 16 (creator_id) + 16 (post_id) + 16 (parent_comment_id) + 100 (content) + 16 (rating) + 1 (is_deleted) + 4 (created_at) + 4 (updated_at) | 189 байт | 16 млрд. | 2.8 ТБ |
-| Post | 16 (id) + 16 (creator_id) + 16 (subbreddit_id) + 300 (title) + 5 (post_type) + 16 (rating) + 16 (comment_count) + 1 (is_deleted) + 4 (created_at) + 4 (updated_at) | 394 байт | 1 млрд. | 367 ГБ |
-| PostText | 16 (id) + 16 (post_id) + 200 (content) + 1 (is_deleted) + 4 (created_at) + 4 (updated_at) | 241 байт | 290 млн. | 65.1 ГБ |
-| PostVideo | 16 (id) + 16 (post_id) + 75 (video_url) + 1 (is_deleted) + 4 (created_at) + 4 (updated_at) | 116 байт | 210 млн. | 23 ГБ |
-| PostImages | 16 (id) + 16 (post_id) + 16 (image_id) + 1 (is_deleted) + 4 (created_at) + 4 (updated_at) | 57 байт | 380 млн. | 20.2 ГБ |
-| PostLink | 16 (id) + 16 (post_id) + 75 (link) + 1 (is_deleted) + 4 (created_at) + 4 (updated_at) | 116 байт | 120 млн. | 13 ГБ |
-| PostVote | 16 (id) + 16 (user_id) + 16 (post_id) + 1 (is_voteup) + 1 (is_deleted) + 4 (created_at) + 4 (updated_at) | 58 байт | 9.4 млн. | 0.5 ГБ |
-| CommentVote | 16 (id) + 16 (user_id) + 16 (post_id) + 1 (is_voteup) + 1 (is_deleted) + 4 (created_at) + 4 (updated_at) | 58 байт | 9.4 млн. | 0.5 ГБ |
-| Subreddit | 16 (id) + 16 (creator_id) + 16 (avatar_id) + 16 (banner_id) + 21 (name) + 500 (description) + 16 (subscriptions) + 1 (is_deleted) + 4 (created_at) + 4 (updated_at) | 610 байт | 5.155 млн. | 2.93 ГБ |
-| Subscription | 16 (id) + 16 (user_id) + 16 (subreddit_id) + 1 (is_deleted) + 4 (created_at) + 4 (updated_at) | 57 байт | 5.15 млрд. | 273 ГБ |
+| Session | 8 (id) + 8 (user_id) + 40 (token) + 8 (expired_at) | 64 байт | 515 млн. | 31 ГБ |
+| Users | 8 (id) + 8 (avatar_id) + 8 (banner_id) + 32 (nickname) + 200 (description) + 32 (email) + 64 (password_hash) + 1 (is_deleted) + 8 (created_at) + 8 (updated_at) | 369 байт | 515 млн. | 177 ГБ |
+| Image | 8 (id) + 16 (uuid) + 1 (is_deleted) + 8 (created_at) + 8 (updated_at) | 41 байт | +-500 млн. | 19 ГБ |
+| Comment | 8 (id) + 8 (creator_id) + 8 (post_id) + 8 (parent_comment_id) + 100 (content) + 8 (rating) + 1 (is_deleted) + 8 (created_at) + 8 (updated_at) | 157 байт | 16 млрд. | 2.3 ТБ |
+| Post | 8 (id) + 8 (creator_id) + 8 (subbreddit_id) + 100 (title) + 5 (post_type) + 8 (rating) + 8 (comment_count) + 1 (is_deleted) + 8 (created_at) + 8 (updated_at) | 162 байт | 1 млрд. | 151 ГБ |
+| PostText | 8 (id) + 8 (post_id) + 500 (content) + 1 (is_deleted) + 8 (created_at) + 8 (updated_at) | 533 байт | 290 млн. | 144 ГБ |
+| PostVideo | 8 (id) + 8 (post_id) + 75 (video_url) + 1 (is_deleted) + 8 (created_at) + 8 (updated_at) | 108 байт | 210 млн. | 21 ГБ |
+| PostImages | 8 (id) + 8 (post_id) + 8 (image_id) + 1 (is_deleted) + 8 (created_at) + 8 (updated_at) | 41 байт | 380 млн. | 15 ГБ |
+| PostLink | 8 (id) + 8 (post_id) + 75 (link) + 1 (is_deleted) + 8 (created_at) + 8 (updated_at) | 108 байт | 120 млн. | 12 ГБ |
+| PostVote | 8 (id) + 8 (user_id) + 8 (post_id) + 1 (is_voteup) + 1 (is_deleted) + 8 (created_at) + 8 (updated_at) | 58 байт | 9.4 млн. | 0.37 ГБ |
+| CommentVote | 8 (id) + 8 (user_id) + 8 (post_id) + 1 (is_voteup) + 1 (is_deleted) + 8 (created_at) + 8 (updated_at) | 42 байт | 9.4 млн. | 0.37 ГБ |
+| Subreddit | 8 (id) + 8 (creator_id) + 8 (avatar_id) + 8 (banner_id) + 21 (name) + 500 (description) + 8 (subscriptions) + 1 (is_deleted) + 8 (created_at) + 8 (updated_at) | 578 байт | 5.155 млн. | 2.8 ГБ |
+| Subscription | 8 (id) + 8 (user_id) + 8 (subreddit_id) + 1 (is_deleted) + 8 (created_at) + 8 (updated_at) | 41 байт | 5.15 млрд. | 197 ГБ |
 
 ## Расчет нагрузки на чтение/запись
 
@@ -389,12 +389,15 @@ BGP Anycast балансировка - для определения ближа�
 ![Db](/assets/db.png)
 
 ### Индексы
-
-| Таблица | Индексы                | Пояснение |
-|---------|------------------------|-----------|
-| Post    | idx_posts_by_subreddit (subreddit_id, created_at, is_deleted), idx_posts_feed (created_at, is_deleted) | Быстрая выборка постов по сабреддиту c сортировкой по дате, лента свежих постов |
-| Comment	| idx_comments_by_post (post_id, rating, is_deleted), idx_comments_by_user (user_id, created_at, is_deleted) | Быстрая выборка комментариев к постам с сортировкой по рейтингу, быстрая выборка комментариев пользователя с сортировкой по дате |
-| Subscription | idx_subreddits_by_user (user_id, subreddit_id) | Быстрое получение списка сообществ пользователя, на которые он подписан |
+| Таблица       | Индекс                                           | Пояснение                       | Размер одной строки | Всего строк | Итоговый размер |
+|---------------|--------------------------------------------------|---------------------------------|---------------------|-------------|-----------------|
+| User          | idx_users_email (email)                           | Быстрая аутентификация       | 32 байт | 515 млн. | 15.3 ГБ |
+| Post    | idx_posts_by_subreddit (subreddit_id, created_at, is_deleted) | Быстрая выборка постов по сабреддиту c сортировкой по дате | 17 байт |  1 млрд. | 15.8 ГБ |
+| Post    | idx_posts_feed (created_at, is_deleted) | Лента свежих постов | 9 байт |  1 млрд. | 8.4 ГБ |
+| Comment	| idx_comments_by_post (post_id, rating, is_deleted) | Быстрая выборка комментариев к постам с сортировкой по рейтингу | 17 байт |  16 млрд. | 253 ГБ |
+| Comment	| idx_comments_by_user (user_id, created_at, is_deleted) | Быстрая выборка комментариев пользователя с сортировкой по дате | 17 байт |  16 млрд. | 253 ГБ |
+| Subreddit | idx_subreddits_by_rating (subreddit_id, rating, is_deleted) | Быстрая выборка сабреддитов с сортировкой по рейтингу | 17 байт |  5.155 млн. | 0.08 ГБ |
+| Subscription | idx_subreddits_by_user (user_id, subreddit_id) | Быстрое получение списка сабреддитов пользователя, на которые он подписан | 16 байт |  5.15 млрд. | 76.7 ГБ |
 
 ### Денормализация
 
@@ -411,6 +414,18 @@ BGP Anycast балансировка - для определения ближа�
 | Comment | creator_nickname, creator_avatar_url | User | Быстрый доступ к данным автора комментария, избавляемся от лишних JOIN |
 | Comment | rating | CommentVote | Быстрое получение рейтинга у комментария, избавляемся от лишнего COUNT |
 
+## Размеры данных
+| Таблица | Расчет размера строки (поля) | Размер строки | Всего строк | Размер таблицы |
+|---------|------------------------------|---------------|-------------|----------------|
+| Session | 8 (id) + 8 (user_id) + 40 (token) + 8 (expired_at) | 64 байт | 515 млн. | 31 ГБ |
+| Users | 8 (id) + 16 (avatar_url) + 16 (banner_url) + 32 (nickname) + 200 (description) + 32 (email) + 64 (password_hash) + 1 (is_deleted) + 8 (created_at) + 8 (updated_at) | 385 байт | 515 млн. | 185 ГБ |
+| Comment | 8 (id) + 8 (creator_id) + 32 (creator_nickname) + 16 (creator_avatar_url) + 8 (post_id) + 8 (parent_comment_id) + 100 (content) + 8 (rating) + 1 (is_deleted) + 8 (created_at) + 8 (updated_at) | 205 байт | 16 млрд. | 3 ТБ |
+| Post | 8 (id) + 8 (creator_id) + 8 (subreddit_id) + 32 (creator_nickname) + 16 (creator_avatar_url) + 16 (subreddit_avatar_url) + 21 (subreddit_name) + 100 (title) + 5 (post_type) + 500 (content) + 16 (video_url) + image_urls (48) + 8 (rating) + 8 (comment_count) + 1 (is_deleted) + 8 (created_at) + 8 (updated_at) | 811 байт | 1 млрд. | 755 ГБ |
+| PostVote | 8 (id) + 8 (user_id) + 8 (post_id) + 1 (is_voteup) + 1 (is_deleted) + 8 (created_at) + 8 (updated_at) | 58 байт | 9.4 млн. | 0.37 ГБ |
+| CommentVote | 8 (id) + 8 (user_id) + 8 (post_id) + 1 (is_voteup) + 1 (is_deleted) + 8 (created_at) + 8 (updated_at) | 42 байт | 9.4 млн. | 0.37 ГБ |
+| Subreddit | 8 (id) + 8 (creator_id) + 16 (avatar_url) + 16 (banner_url) + 21 (name) + 500 (description) + 8 (subscriptions) + 1 (is_deleted) + 8 (created_at) + 8 (updated_at) | 594 байт | 5.155 млн. | 2.9 ГБ |
+| Subscription | 8 (id) + 8 (user_id) + 8 (subreddit_id) + 1 (is_deleted) + 8 (created_at) + 8 (updated_at) | 41 байт | 5.15 млрд. | 197 ГБ |
+
 ### Выбор СУБД (потаблично)
 
 | Таблица | СУБД | Пояснение |
@@ -423,6 +438,15 @@ BGP Anycast балансировка - для определения ближа�
 | CommentVote | Cassandra | Частые записи без delete и update |
 | Subscription | PostgreSQL | Низкая нагрузка на чтение и запись |
 | Subreddit | PostgreSQL | Низкая нагрузка на чтение и запись, уникальные данные |
+
+#### Elasticsearch
+
+| Таблица       | Индекс                               | Пояснение                           | Размер одной строки | Всего строк | Итоговый размер |
+|---------------|--------------------------------------|-------------------------------------|---------------------|-------------|-----------------|
+| Users         | users (user_id, nickname)               | Поиск пользователей по никнейму    | 40 байт      | 515 млн.      | 19 ГБ       |
+| Post          | posts (post_id, title, content) | Поиск постов по заголовку и контенту | 608 байт      | 1 млрд.         | 566 ГБ          |
+| Comment       | comments (comment_id, content)        | Поиск комментариев по контенту         | 108 байт      | 16 млрд.        | 1.6 ТБ        |
+| Subreddit     | subreddits (subreddit_id, name, description)        | Поиск сабреддитов по названию и описанию         | 529 байт      | 5.155 млн.        | 2.5 ГБ        |
 
 ### Шардирование и резервирование СУБД (потаблично)
 
