@@ -456,7 +456,7 @@ BGP Anycast балансировка - для определения ближа�
 | SearchComment | ElasticSearch | Полнотекстовый поиск |
 | SearchSubreddit | ElasticSearch | Полнотекстовый поиск |
 | SubredditSubscriptionCount | Tarantool | Частые обновления, разгрузка Subreddit |
-| CommentRating | Tarantool | Частые обновления, разгрузка Comment |
+| CommentRating | Tarantool | Частые обновления, разгрузка Comment, гибридное хранилище |
 | PostRating | Tarantool | Частые обновления, разгрузка Post |
 | PostCommentCount | Tarantool | Частые обновления, разгрузка Post |
 
