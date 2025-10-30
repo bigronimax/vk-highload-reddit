@@ -397,8 +397,8 @@ BGP Anycast балансировка - для определения ближа�
 | User          | idx_users_email (email)       | Hash                    | Быстрая аутентификация       | 32 байт | 515 млн. | 15.3 ГБ |
 | Post    | (id) | B-Tree | Primary key | 8 байт |  1 млрд. | 7.5 ГБ |
 | Post    | idx_posts_by_subreddit (subreddit_id, created_at DESC) where is_deleted = false | B-Tree | Быстрая выборка постов по сабреддиту c сортировкой по дате | 16 байт |  1 млрд. | 15 ГБ |
-| Post    | idx_posts_feed_new (created_at DESC) where is_deleted = false | BRIN |  Лента свежих постов | 8 байт |  1 млрд. | 7.5 ГБ |
-| Post    | idx_posts_feed_best (rating DESC) where is_deleted = false | BRIN | Лента лучших постов | 8 байт |  1 млрд. | 7.5 ГБ |
+| Post    | idx_posts_feed_new (created_at DESC) where is_deleted = false | B-Tree |  Лента свежих постов | 8 байт |  1 млрд. | 7.5 ГБ |
+| Post    | idx_posts_feed_best (rating DESC) where is_deleted = false | B-Tree | Лента лучших постов | 8 байт |  1 млрд. | 7.5 ГБ |
 | Comment    | (id) | B-Tree | Primary key | 8 байт |  16 млрд. | 120 ГБ |
 | Comment	| idx_comments_by_post (post_id, created_at DESC) where is_deleted = false | B-Tree | Быстрая выборка комментариев к посту с сортировкой по дате | 16 байт |  16 млрд. | 238 ГБ |
 | Subreddit          | (id) | B-Tree                           | Primary key       | 8 байт | 5.155 млн. | 0.04 ГБ |
