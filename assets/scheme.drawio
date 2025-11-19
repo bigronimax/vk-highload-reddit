@@ -1,6 +1,6 @@
-<mxfile host="Electron" modified="2025-11-17T20:41:01.641Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.2.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="0M11qzFL133-Hz3Prqlu" version="24.2.5" type="device">
+<mxfile host="Electron" modified="2025-11-19T18:20:01.821Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.2.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="x_aOGAatmImIfD2BFm6t" version="24.2.5" type="device">
   <diagram name="Страница — 1" id="KpYYT-pi_qzQT1bRLOP6">
-    <mxGraphModel dx="1363" dy="1750" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4017" dy="2797" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -112,16 +112,16 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="ecA69gqi7W1dzBsdlQNZ-25" value="Микросервис" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="320" y="340" width="120" height="60" as="geometry" />
+          <mxGeometry x="921" y="1327" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="ecA69gqi7W1dzBsdlQNZ-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" parent="1" source="ecA69gqi7W1dzBsdlQNZ-27" target="ecA69gqi7W1dzBsdlQNZ-28" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="ecA69gqi7W1dzBsdlQNZ-27" value="Prometheus" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="520" y="340" width="120" height="60" as="geometry" />
+          <mxGeometry x="1121" y="1327" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="ecA69gqi7W1dzBsdlQNZ-28" value="Grafana" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="720" y="340" width="120" height="60" as="geometry" />
+          <mxGeometry x="1321" y="1327" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="ecA69gqi7W1dzBsdlQNZ-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=none;startFill=0;dashed=1;" parent="1" source="ecA69gqi7W1dzBsdlQNZ-14" target="ecA69gqi7W1dzBsdlQNZ-30" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -320,7 +320,7 @@
           <mxGeometry x="620" y="-40" width="120" height="55" as="geometry" />
         </mxCell>
         <mxCell id="j4dIpI9zoBvr_v-6rFbL-11" value="Сбор метрик с микросервисов" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="475" y="295" width="210" height="30" as="geometry" />
+          <mxGeometry x="1076" y="1282" width="210" height="30" as="geometry" />
         </mxCell>
         <mxCell id="j4dIpI9zoBvr_v-6rFbL-13" value="Kafka&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;user_change&lt;br&gt;comment_change&lt;br&gt;post_change&lt;br&gt;subreddit_change&lt;/span&gt;&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.delay;whiteSpace=wrap;fillColor=#76608a;strokeColor=#432D57;fontColor=#ffffff;" parent="1" vertex="1">
           <mxGeometry x="1981" y="290" width="150" height="80" as="geometry" />
